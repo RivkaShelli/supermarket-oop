@@ -1,7 +1,7 @@
 class Consumer extends IPerson { 
-    finish: boolean;
-    constructor(finish: boolean, firstName?: string, lastName?: string) {
+    isClubMember: boolean;
+    constructor(isClubMember: boolean, firstName?: string, lastName?: string) {
         super(firstName, lastName);
-        this.finish = finish;
+        this.isClubMember = isClubMember;
     }
 }
