@@ -2,6 +2,7 @@ class CashRegister {
     cashId: number;
     worker: StaffMember;
     products: Product[];
+    private static cashIdCounter: number = 1;
 
     constructor(cashId: number, worker?: StaffMember, products?: Product[]) {
         this.cashId = cashId;
