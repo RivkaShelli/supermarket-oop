@@ -1,10 +1,10 @@
 class CashRegister { 
-    num: number;
+    cashId: number;
     worker: StaffMember;
     products: Product[];
 
-    constructor(num: number, worker?: StaffMember, products?: Product[]) {
-        this.num = num;
+    constructor(cashId: number, worker?: StaffMember, products?: Product[]) {
+        this.cashId = cashId;
         this.worker = worker;
         this.products = products;
     }
