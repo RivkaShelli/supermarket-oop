@@ -4,10 +4,11 @@ class CashRegister {
     products: Product[];
     private static cashIdCounter: number = 1;
 
-    constructor(cashId: number, worker?: StaffMember, products?: Product[]) {
-        this.cashId = cashId;
+    constructor(worker?: StaffMember, products?: Product[], cashId?: number) {
         this.worker = worker;
         this.products = products;
+        this.cashId = cashId;
+        CashRegister.cashIdCounter++;
     }
 
     startNewPurchase() {
@@ -26,12 +27,11 @@ class CashRegister {
     }
     endPurchase(c: Consumer) {
         var sum = 0;
-        if (c.finish == true) {
+        if (c.isClubMember == true) { }
             this.products.forEach(p => {
                 sum += p.price;
 
             })
-        }
         return sum;
     }
 }
