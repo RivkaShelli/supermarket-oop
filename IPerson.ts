@@ -1,8 +1,9 @@
-class IPerson {
-    firstName: string;
-    lastName: string;
-    constructor(firstName: string, lastName: string) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+interface IPerson {
+}
+
+class Consumer implements  IPerson {
+    isClubMember: boolean;
+    constructor(isClubMember: boolean) {
+        this.isClubMember = isClubMember;
     }
 }
