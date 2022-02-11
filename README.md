@@ -1,11 +1,11 @@
 # supermarket-oop
 
 Classes:
-- `CashRegister` 
+- `CashRegister` (`cashId`)
 - `Consumer`
 - `IPerson`
 - `Product` (`price`, `name`, `brand`, `barcode`)
-- `StaffMember`
+- `StaffMember` (`role`)
 
 Inheritance:
 `StaffMember` and `Consumer` inherit `IPerson`
