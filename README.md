@@ -15,7 +15,7 @@ Every cash machine has unique id (`cashId` property), and the machine unique id 
 you can use `map` and `reduce` inside the function `endPurchase` to calculate the total.
 
 ## Inheritance:
-`StaffMember` and `Consumer` inherit `IPerson`
+`StaffMember` and `Consumer` implememts `IPerson`
 
  cashId: number;
     products?: Product[];
