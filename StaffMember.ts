@@ -1,7 +1,6 @@
-class StaffMember extends IPerson { 
+class StaffMember implements IPerson { 
     role: string;
-    constructor(role: string, firstName?: string, lastName?: string) {
-        super(firstName, lastName);
+    constructor(role: string) {
         this.role = role;
 
     }
