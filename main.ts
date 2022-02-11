@@ -4,24 +4,24 @@ import { Product } from "./Product";
 import { StaffMember } from "./StaffMember";
 
 const products: Product[] = [
-   new Product(100, 'jagermeister', 'Mast-Jägermeister AG', 'asdr42fac3qfersfv43'),
-   new Product(7, 'Bread', 'Angel', 'sdfsdf34frv34')
+    new Product(100, 'jagermeister', 'Mast-Jägermeister AG', 'asdr42fac3qfersfv43'),
+    new Product(7, 'Bread', 'Angel', 'sdfsdf34frv34')
 ]
 
 const cashiers: StaffMember[] = [
-   new StaffMember('Cashier'),
-   new StaffMember('Cashier')
+    new StaffMember('Cashier'),
+    new StaffMember('Cashier')
 ]
 
 const stands: CashRegister[] = [
-   new CashRegister(1),
-   new CashRegister(2)
+    new CashRegister(cashiers[0]),
+    new CashRegister(cashiers[1])
 ];
 
 stands[0].startNewPurchase(); // ERROR!!! No worker assigned
 
-stands[0].changeWorker(cashiers[0]);
-stands[1].changeWorker(cashiers[1]);
+stands[0].changeWorker(cashiers[1]);
+stands[1].changeWorker(cashiers[0]);
 
 stands[0].startNewPurchase();
 
