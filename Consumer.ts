@@ -1,7 +1,6 @@
-class Consumer extends IPerson { 
+class Consumer implements  IPerson {
     isClubMember: boolean;
-    constructor(isClubMember: boolean, firstName?: string, lastName?: string) {
-        super(firstName, lastName);
+    constructor(isClubMember: boolean) {
         this.isClubMember = isClubMember;
     }
 }
